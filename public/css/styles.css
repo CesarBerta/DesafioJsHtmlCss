@@ -1,19 +1,25 @@
 header {
     width: 100%;
     background-color: #EAC926;
-    padding: 18px;
-    margin: auto;
+    padding: 15px;
+    margin: 15;
     border-radius: 1px;    
     box-sizing: border-box;
 }
+
 header img{
     box-sizing: border-box;
     padding: 15px;
     margin: auto;   
 }
+
 .header-busqueda{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
     text-align: center;
 }
+
 .burger-menu {
     background: #1259c3;
     color:white;
@@ -21,11 +27,36 @@ header img{
     padding: 9px 12px;
     border-radius: 9%;
 }
+
 .burger-center{
     display: flex;
     justify-content: center;
     text-decoration:none;
 }
+
+ul {
+    margin: 0px;
+    padding-left: 0px;
+}
+
+nav ul li a{
+    color:black;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    padding-left: 0px;
+    margin-left: 0px;
+    justify-content:start;
+    text-decoration:none;
+    box-sizing: border-box;
+   
+}
+
+main {
+    background: #ebebeb;
+}
+
 article img{
     width: 100%;
     display: flex;
@@ -33,19 +64,37 @@ article img{
     justify-content: center;
     border: 3px solid #bcc1c1;
     float:inline-start;
-    box-sizing: border-box;
+    box-sizing:border-box;
+    margin-top:10px;
+    margin-bottom:10px;
 }
-ul{
+
+.section--titulares{
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
     margin: 0px;
-    padding-left: 0px;
+    padding-top: 21px;
 }
-nav ul li a{
-    color:black;
-    display: flex;
-    padding-left: 0px;
-    margin-left: 0px;
-    justify-content:start;
-    text-decoration:none;
-    box-sizing: border-box;
-    
+
+.section__article--precio{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;   
+}
+
+.section__article--descuento{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+} 
+
+.section__article--descripcion{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;   
+}
+
+footer{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
 }
