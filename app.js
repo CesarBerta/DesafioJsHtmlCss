@@ -14,6 +14,11 @@ app.listen (3033, () =>
     console.log("Servidor corriendo en Puerto 3033")
 );
 
-app.get("/", (req,res)=>
+app.get("/", (req,res)=>{
     res.sendFile(path.resolve(__dirname, "./views/home.html"))
-);
+});
+
+/* 
+app.get("/html", (req,res)=>{
+    res.send("Probando funcionamiento hipervinculo");
+}); */
