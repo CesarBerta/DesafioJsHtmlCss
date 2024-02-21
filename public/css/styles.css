@@ -13,7 +13,7 @@
     display: flex;
 }
 .header--logo{
-    width: 190px;
+    width: 150px;    
     flex-grow: 0.5;
 }
 .header__form--search{
@@ -57,12 +57,93 @@
     color:#222222;
     display: inline-block;
     padding: 6px 0px 6px 0px;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
 }
+
+/* formulario Register - Login */
+.main--form {
+    display: flex; 
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    background: #ebebeb;
+}
+.users--form{
+    width: 100%;
+    padding: 
+    20px 15px;
+    max-width: 550px;
+}
+.control--form{
+    margin-bottom: 30px;
+}
+
+.control__form--photo{
+    margin-bottom: 40px;
+    padding: 3px 7px ;
+    border: solid 1px #666;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.form__userProfile{
+    display: flex;
+    margin: 15px 30px 0 30px;
+    justify-content: space-around;
+    font-size: 1rem;
+    font-weight: normal;
+}
+.form__userProfile--radio {
+    padding: 30px 30px;
+    margin-right: 10px;
+}
+
+.form__userCategories{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 60px;
+    font-size: 1rem;
+}
+.form__userProfile--checkbox{
+    padding: 30px 30px;
+    margin: 15px 15px 15px 0;
+
+
+}
+.control__form--label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: block;
+}
+.control {
+    width: 100%;
+    padding: 9px;
+    font-size: 1rem;
+}
+
+.button--form {
+    background-color: #1259c3;
+    border: none;
+    font-size: 18px;
+    color:white;
+    padding: 6px 10px;
+    border-radius:6px;
+}
+.buttonSend--form {
+    width: 100%;
+    height: 7vh;
+    background-color: #1259c3;
+    border: none;
+    font-size: 18px;
+    color:white;
+    padding: 5px 10px;
+    border-radius:6px;
+}
+
+
 .main--banner{
     width: 100%;
 }
-.body--main {
+.main--home {
     font-family: "Roboto", sans-serif;
     background: #ebebeb;
 }
@@ -177,7 +258,7 @@
     font-size: 0.6rem;
     font-weight: normal;
     text-align: left;
-    margin: 30px 0px 0px 15px;;
+    margin: 30px 0px 0px 40px;;
 }
 /* Media Queries */
 /* tablets */
@@ -221,7 +302,7 @@
         margin: 0px 6px; 
     }
     .header__nav--menu a{
-        font-size: 14px;
+        font-size: 12px;
     }
     .header__form--search{
        height:60%;
@@ -241,7 +322,7 @@
         align-items: center;
     }
     .header__nav--menu a{
-        font-size: 1rem;
+        font-size: 12px;
     }
 }
 
@@ -259,7 +340,7 @@
         margin: 0px 10px;
     }
     .header__nav--menu a{
-        font-size: 16px;
+        font-size: 14px;
     }
     .header__h2--buy{
         max-width: none;
