@@ -1,13 +1,14 @@
-/* con * aplico a todo el HTML */
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0; 
-    box-sizing: border-box;
 }
 .header--main {
     font-family: "Roboto", sans-serif;
     background-color: #EAC926;
-    padding: 15px;
+    padding: 15px 15px 10px 15px;
+    width: 100%;
+    /* height: 103px; */
 }
 .header__div--logo{
     display: flex;
@@ -59,7 +60,6 @@
     padding: 6px 0px 6px 0px;
     font-size: 0.6rem;
 }
-
 /* formulario Register - Login */
 .main--form {
     display: flex; 
@@ -76,7 +76,6 @@
 .control--form{
     margin-bottom: 30px;
 }
-
 .control__form--photo{
     margin-bottom: 40px;
     padding: 3px 7px ;
@@ -84,7 +83,6 @@
     border-radius: 6px;
     font-size: 1rem;
 }
-
 .form__userProfile{
     display: flex;
     margin: 15px 30px 0 30px;
@@ -96,7 +94,6 @@
     padding: 30px 30px;
     margin-right: 10px;
 }
-
 .form__userCategories{
     display: flex;
     flex-direction: column;
@@ -106,8 +103,6 @@
 .form__userProfile--checkbox{
     padding: 30px 30px;
     margin: 15px 15px 15px 0;
-
-
 }
 .control__form--label{
     margin-bottom: 5px;
@@ -119,7 +114,6 @@
     padding: 9px;
     font-size: 1rem;
 }
-
 .button--form {
     background-color: #1259c3;
     border: none;
@@ -127,6 +121,10 @@
     color:white;
     padding: 6px 10px;
     border-radius:6px;
+    transition: all 300ms;
+}
+.button--form:hover{
+    background-color: #0022AA;
 }
 .buttonSend--form {
     width: 100%;
@@ -137,9 +135,11 @@
     color:white;
     padding: 5px 10px;
     border-radius:6px;
+    transition: all 300ms;
 }
-
-
+.buttonSend--form:hover{
+    background-color: #0022AA;
+}
 .main--banner{
     width: 100%;
 }
@@ -162,7 +162,7 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    margin: 0px 15px 0px 15px;
+    margin: 0;
     border-bottom: solid 1px #ebebeb;
 }
 .main__article--img {
@@ -173,7 +173,7 @@
 .body__section--div {
     background: white;
     padding-top: 15px;
-    margin: 0px 15px 0px 15px;
+    margin: 0;
 }
 .section_article--send{
     padding: 0px 0px 14.5px 30px;
@@ -193,15 +193,18 @@
     position: absolute;
     right: 20px;
     top: -30px;
+    transition: all 700ms;
+}
+.section__article--icon:hover{
+    transform: rotate(-90deg)
 }
 .section__article--precio {
-    font-size: 1.3rem;
+    font-size: 1.21rem;
     padding: 0px 0px 0px 15px;
     margin: 0px 0px 15px 0px;
-      
 }
 .section__article--descuento {
-    font-size: 1.1rem;
+    font-size: 0.81rem;
     text-align: left;
     color:#39b54a;
     padding: 0px 0px 0px 15px;
@@ -220,12 +223,17 @@
     font-weight: bold;
     color:#666;
     padding: 0px 0px 10px 10px;
-    margin: 0px 0px 10px 0px;
-    display:none;
+    margin: 0px 0px 0px 0px;
+    display:none;   
+}
+.main__secction--article{
+    align-self: stretch;
+    margin: 15px;
+    transition: all 300ms;
 }
 .footer {
     font-family: "Roboto", sans-serif;
-    margin: 0px 15px 0px 15px;   
+    margin: 0px 15px 10px 15px;
 }
 .footer__article a {
     display: flex;
@@ -238,8 +246,15 @@
     background: #1259c3;
     color:white;
     font-size: 1.6rem;
-    padding: 6px 6px;
-    border-radius: 9%;  
+    padding: 16px 6px;
+    border-radius: 9%;
+    transition: all 300ms; 
+    text-align: center;
+    width:60px;
+    height:60px;
+}
+.footer__icon--center:hover{
+    background:#0022AA;
 }
 .footer__article h4{
     font-size: 1rem;
@@ -254,25 +269,31 @@
     text-align: center;
     margin-top: 3px;
 }
-.footer--copyright{
+.footer--author{
     font-size: 0.6rem;
     font-weight: normal;
+    background-color:transparent;
     text-align: left;
-    margin: 30px 0px 0px 40px;;
+    margin: 30px 0px 10px 15px;
 }
+.footer--login--register{
+    font-family: "Roboto", sans-serif;
+    margin: -24px 0px 10px 15px;
+}
+
 /* Media Queries */
 /* tablets */
 @media(min-width:481px) {
     .main__section--div2 {
         display:flex;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
     }
-    .body__section--div, .section__article--img {
+    .main__secction--article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100, 0.6 );
-    }
-    .section__article--descripcion{
-        display: flex;
+        .section__article--descripcion {
+            display: flex;
+        }
     }
     .article__div--flex{
         margin: 0px 0px 0px 0px;
@@ -319,13 +340,16 @@
     .main__section--div4 {
         display:flex;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
     }
     .header__nav--menu a{
         font-size: 12px;
     }
+    .footer--desktop{
+        display:flex;
+        justify-content:space-between;
+    }
 }
-
 @media (min-width:1200px) {
     .header__main--bar {
         max-width: 1200px;
