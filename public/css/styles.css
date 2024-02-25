@@ -4,11 +4,10 @@
     margin: 0; 
 }
 .header--main {
+    width: 100%;
     font-family: "Roboto", sans-serif;
     background-color: #EAC926;
     padding: 15px 15px 10px 15px;
-    width: 100%;
-    /* height: 103px; */
 }
 .header__div--logo{
     display: flex;
@@ -20,12 +19,19 @@
 .header__form--search{
     display: flex;   
 }
+.header__icon--search{
+    opacity: 0.7;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
 .header__input--search {
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 18px;
     border-radius: 4px;
     border: 3px solid #f5f5f5;
-    padding: 7px 60px 9px 15px;
+    padding: 7px 43px 9px 15px;
     justify-content: flex-end;
     flex-grow: 0.5;
     margin-left: 15px;
@@ -33,7 +39,7 @@
 .header__h2--buy {
     font-weight: 400;
     text-align: center;
-    font-size: 1rem;
+    font-size: 15px;
     margin: 15px 0 15px 0;
 }
 .header__hamburger-bottom {
@@ -45,7 +51,7 @@
     text-align: center;
     font-size: 18px;
     padding: 6px 9px 6px 9px;
-    margin: 0 auto;    
+    margin: 0 auto;
 }
 .header__nav--menu{
     display: none;
@@ -57,8 +63,8 @@
     text-decoration: none;
     color:#222222;
     display: inline-block;
-    padding: 6px 0px 6px 0px;
-    font-size: 0.6rem;
+    padding: 6px 0 6px 0;
+    font-size: 10px;
 }
 /* formulario Register - Login */
 .main--form {
@@ -69,8 +75,7 @@
 }
 .users--form{
     width: 100%;
-    padding: 
-    20px 15px;
+    padding: 20px 15px;
     max-width: 550px;
 }
 .control--form{
@@ -81,13 +86,13 @@
     padding: 3px 7px ;
     border: solid 1px #666;
     border-radius: 6px;
-    font-size: 1rem;
+    font-size: 16px;
 }
 .form__userProfile{
     display: flex;
     margin: 15px 30px 0 30px;
     justify-content: space-around;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: normal;
 }
 .form__userProfile--radio {
@@ -98,7 +103,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 0 0 60px;
-    font-size: 1rem;
+    font-size: 16px;
 }
 .form__userProfile--checkbox{
     padding: 30px 30px;
@@ -112,7 +117,7 @@
 .control {
     width: 100%;
     padding: 9px;
-    font-size: 1rem;
+    font-size: 16px;
 }
 .button--form {
     background-color: #1259c3;
@@ -120,7 +125,7 @@
     font-size: 18px;
     color:white;
     padding: 6px 10px;
-    border-radius:6px;
+    border-radius: 6px;
     transition: all 300ms;
 }
 .button--form:hover{
@@ -134,7 +139,7 @@
     font-size: 18px;
     color:white;
     padding: 5px 10px;
-    border-radius:6px;
+    border-radius: 6px;
     transition: all 300ms;
 }
 .buttonSend--form:hover{
@@ -152,10 +157,10 @@
 }
 .main--titulares {
     font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
+    font-size: 24px;
     color:#666666;
     padding-top: 15px;
-    margin: 0px 15px 15px 15px; 
+    margin: 0 15px 15px 15px; 
 }
 .section__article--img {
     display: flex;
@@ -176,8 +181,8 @@
     margin: 0;
 }
 .section_article--send{
-    padding: 0px 0px 14.5px 30px;
-    margin: 0px 0px 0px 0px;
+    padding: 0 0 14.5px 30px;
+    margin: 0;
     position: relative;
 }
 .section__article--icon{
@@ -199,16 +204,16 @@
     transform: rotate(-90deg)
 }
 .section__article--precio {
-    font-size: 1.21rem;
-    padding: 0px 0px 0px 15px;
-    margin: 0px 0px 15px 0px;
+    font-size: 19px;
+    padding: 0 0 0 15px;
+    margin: 0 0 15px 0;
 }
 .section__article--descuento {
-    font-size: 0.81rem;
+    font-size: 13.5px;
     text-align: left;
     color:#39b54a;
-    padding: 0px 0px 0px 15px;
-    margin: 0px 0px 15px 0px;
+    padding: 0 0 0 15px;
+    margin: 0 0 16px 0;
     flex-grow: 0.7;
     align-self: flex-end;    
 }
@@ -216,14 +221,14 @@
     display:flex;
     justify-content: flex-start;
     align-items: flex-end;
-    margin-bottom:10px; 
+    margin-bottom: 10px; 
 }
 .section__article--descripcion {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: bold;
     color:#666;
-    padding: 0px 0px 10px 10px;
-    margin: 0px 0px 0px 0px;
+    padding: 0 0 10px 10px;
+    margin: 0;
     display:none;   
 }
 .main__secction--article{
@@ -233,7 +238,7 @@
 }
 .footer {
     font-family: "Roboto", sans-serif;
-    margin: 0px 15px 10px 15px;
+    margin: 0 15px 10px 15px;
 }
 .footer__article a {
     display: flex;
@@ -245,7 +250,7 @@
 .footer__icon--center {
     background: #1259c3;
     color:white;
-    font-size: 1.6rem;
+    font-size: 25px;
     padding: 16px 6px;
     border-radius: 9%;
     transition: all 300ms; 
@@ -257,28 +262,28 @@
     background:#0022AA;
 }
 .footer__article h4{
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
     margin-top: 16px;
     margin-bottom: 3px;   
 }
 .footer__article p{
-    font-size: 0.7rem;
+    font-size: 11.2px;
     font-weight: normal;
     text-align: center;
     margin-top: 3px;
 }
 .footer--author{
-    font-size: 0.6rem;
+    font-size: 10px;
     font-weight: normal;
     background-color:transparent;
     text-align: left;
-    margin: 30px 0px 10px 15px;
+    margin: 30px 0 10px 10px;
 }
 .footer--login--register{
     font-family: "Roboto", sans-serif;
-    margin: -24px 0px 10px 15px;
+    margin: -24px 0 10px 10px;
 }
 
 /* Media Queries */
@@ -290,13 +295,13 @@
         align-items: stretch;
     }
     .main__secction--article:hover {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100, 0.6 );
+        box-shadow: 0 0 10px rgb(100, 100, 100, 0.6 );
         .section__article--descripcion {
             display: flex;
         }
     }
     .article__div--flex{
-        margin: 0px 0px 0px 0px;
+        margin: 0;
     }
     .header__main--bar{
         display: flex;
@@ -320,7 +325,7 @@
         margin-top: 15px;
     }
     .header__nav--menu li{
-        margin: 0px 6px; 
+        margin: 0 6px; 
     }
     .header__nav--menu a{
         font-size: 12px;
@@ -330,8 +335,8 @@
     }
     .header__input--search {
         width: 100%;
-        font-size: 1.3rem;
-        padding: 3.5px 30px 4.5px 7.5px;
+        font-size: 21px;
+        padding: 3.5px 43px 4.5px 7.5px;
         margin-left: 40px;
     }
 }
@@ -361,14 +366,14 @@
         margin: 0 auto;
     }
     .header__nav--menu li{
-        margin: 0px 10px;
+        margin: 0 10px;
     }
     .header__nav--menu a{
         font-size: 14px;
     }
     .header__h2--buy{
         max-width: none;
-        font-size: 19px;
+        font-size: 18px;
         font-weight: 460;
     }
     .main--banner {
