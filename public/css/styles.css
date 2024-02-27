@@ -68,7 +68,7 @@
 }
 /* formulario Register - Login */
 .main--form {
-    display: flex; 
+    display: flex;
     justify-content: center;
     font-family: "Roboto", sans-serif;
     background: #ebebeb;
@@ -114,7 +114,7 @@
     font-weight: bold;
     display: block;
 }
-.control {
+.main__input--control {
     width: 100%;
     padding: 9px;
     font-size: 16px;
@@ -149,6 +149,7 @@
     width: 100%;
 }
 .main--home {
+    margin: 0 auto;
     font-family: "Roboto", sans-serif;
     background: #ebebeb;
 }
@@ -233,7 +234,7 @@
 }
 .main__secction--article{
     align-self: stretch;
-    margin: 15px;
+    margin: 9px;
     transition: all 300ms;
 }
 .footer {
@@ -285,7 +286,6 @@
     font-family: "Roboto", sans-serif;
     margin: -24px 0 10px 10px;
 }
-
 /* Media Queries */
 /* tablets */
 @media(min-width:481px) {
